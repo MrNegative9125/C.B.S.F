@@ -1,0 +1,32 @@
+{
+    "files_used": [
+        "02-14-2018.csv",
+        "02-16-2018.csv",
+        "02-21-2018.csv",
+        "02-28-2018.csv",
+        "03-01-2018.csv",
+        "03-02-2018.csv"
+    ],
+    "total_files": 6,
+    "total_records": 4848142,
+    "training_validation_records": 3636106,
+    "test_records": 1212036,
+    "total_features": 74,
+    "attack_types": {
+        "Benign": 2874639,
+        "DDOS attack-HOIC": 540838,
+        "DoS attacks-Hulk": 461912,
+        "Bot": 286191,
+        "FTP-BruteForce": 193360,
+        "SSH-Bruteforce": 187589,
+        "Infilteration": 161934,
+        "DoS attacks-SlowHTTPTest": 139890,
+        "DDOS attack-LOIC-UDP": 1730,
+        "Label": 59
+    },
+    "processing_date": "2025-11-15 10:25:27",
+    "cross_validation": {
+        "k_folds": 3,
+        "test_size_percentage": 25.0
+    }
+}

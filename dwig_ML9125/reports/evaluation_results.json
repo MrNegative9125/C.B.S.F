@@ -1,0 +1,66 @@
+{
+    "cross_validation": {
+        "k_folds": 3,
+        "test_set_size": 0.25
+    },
+    "dataset_info": {
+        "total_files": 6,
+        "total_records": 4848142,
+        "training_validation_records": 3636106,
+        "test_records": 1212036
+    },
+    "binary_classification": {
+        "Logistic_Regression": {
+            "cv_mean_accuracy": 0.9284116030624276,
+            "cv_std_accuracy": 0.0004523371253300794,
+            "cv_mean_precision": 0.9023070515969595,
+            "cv_std_precision": 0.0011095126623798977,
+            "cv_mean_recall": 0.9241997476229474,
+            "cv_std_recall": 0.00024286511982835187,
+            "cv_mean_f1": 0.9131217277840822,
+            "cv_std_f1": 0.0004887223058075905,
+            "cv_mean_roc_auc": 0.9661186230679689,
+            "cv_std_roc_auc": 0.00028194987012796434,
+            "test_accuracy": 0.9287900689418466,
+            "test_precision": 0.9032354566905266,
+            "test_recall": 0.924059946166818,
+            "test_f1_score": 0.9135290398917172,
+            "test_roc_auc": 0.9654978491726638
+        },
+        "Random_Forest": {
+            "cv_mean_accuracy": 0.9658588060466385,
+            "cv_std_accuracy": 0.000177693433636405,
+            "cv_mean_precision": 0.9878470757671636,
+            "cv_std_precision": 0.0004497110081367519,
+            "cv_mean_recall": 0.9275393260437029,
+            "cv_std_recall": 2.7836820888877532e-05,
+            "cv_mean_f1": 0.9567437298785099,
+            "cv_std_f1": 0.00021579897476198034,
+            "cv_mean_roc_auc": 0.9879103267577601,
+            "cv_std_roc_auc": 5.620241306986223e-05,
+            "test_accuracy": 0.9657419416584986,
+            "test_precision": 0.9876557333172168,
+            "test_recall": 0.9274326274484369,
+            "test_f1_score": 0.9565972730351595,
+            "test_roc_auc": 0.9880555372446856
+        }
+    },
+    "multiclass_classification": {
+        "cv_mean_accuracy": 0.08856507515663903,
+        "cv_std_accuracy": 0.0013816013786134191,
+        "test_accuracy": 0.07971627905441753,
+        "num_classes": 10,
+        "class_distribution": {
+            "Benign": 2874639,
+            "Bot": 286191,
+            "DDOS attack-HOIC": 540838,
+            "DDOS attack-LOIC-UDP": 1730,
+            "DoS attacks-Hulk": 461912,
+            "DoS attacks-SlowHTTPTest": 139890,
+            "FTP-BruteForce": 193360,
+            "Infilteration": 161934,
+            "Label": 59,
+            "SSH-Bruteforce": 187589
+        }
+    }
+}

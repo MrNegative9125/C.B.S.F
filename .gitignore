@@ -1,0 +1,8 @@
+venv/
+data/
+__pycache__/
+*.csv
+*.zip
+*.log
+setup.bat
+test_network_traffic*

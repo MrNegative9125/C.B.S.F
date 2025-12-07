@@ -1,0 +1,12 @@
+{
+    "0": "Benign",
+    "1": "Bot",
+    "2": "DDOS attack-HOIC",
+    "3": "DDOS attack-LOIC-UDP",
+    "4": "DoS attacks-Hulk",
+    "5": "DoS attacks-SlowHTTPTest",
+    "6": "FTP-BruteForce",
+    "7": "Infilteration",
+    "8": "Label",
+    "9": "SSH-Bruteforce"
+}

@@ -1,0 +1,119 @@
+
+CYBERATTACK PROBABILITY FORECASTING - EXECUTION SUMMARY
+======================================================================
+
+Execution Date: 2025-11-15 10:25:30
+Dataset: COMPLETE CICIDS 2018 Dataset
+
+FILES PROCESSED
+---------------
+Total Files: 6
+Files Used:
+  - 02-14-2018.csv
+  - 02-16-2018.csv
+  - 02-21-2018.csv
+  - 02-28-2018.csv
+  - 03-01-2018.csv
+  - 03-02-2018.csv
+
+CROSS-VALIDATION STRATEGY
+--------------------------
+Method: 3-Fold Stratified Cross-Validation
+Training/Validation: 3,636,106 samples (75%)
+Final Test Set: 1,212,036 samples (25%)
+Total Records: 4,848,142
+Total Features: 74
+
+ATTACK TYPE DISTRIBUTION
+-------------------------
+Total Attack Types: 10
+Binary Distribution:
+  - Benign: 2,874,639 (59.29%)
+  - Attack: 1,973,503 (40.71%)
+
+Top Attack Types:
+  - Benign: 2,874,639 (59.29%)
+  - DDOS attack-HOIC: 540,838 (11.16%)
+  - DoS attacks-Hulk: 461,912 (9.53%)
+  - Bot: 286,191 (5.90%)
+  - FTP-BruteForce: 193,360 (3.99%)
+  - SSH-Bruteforce: 187,589 (3.87%)
+  - Infilteration: 161,934 (3.34%)
+  - DoS attacks-SlowHTTPTest: 139,890 (2.89%)
+  - DDOS attack-LOIC-UDP: 1,730 (0.04%)
+  - Label: 59 (0.00%)
+
+BINARY CLASSIFICATION (Attack Detection)
+-----------------------------------------
+Model: Random_Forest
+
+Cross-Validation Results (3 folds):
+  Mean Accuracy:  0.9659 ± 0.0002
+  Mean Precision: 0.9878 ± 0.0004
+  Mean Recall:    0.9275 ± 0.0000
+  Mean F1-Score:  0.9567 ± 0.0002
+  Mean ROC-AUC:   0.9879 ± 0.0001
+
+Final Test Set Performance:
+  Accuracy:  0.9657
+  Precision: 0.9877
+  Recall:    0.9274
+  F1-Score:  0.9566
+  ROC-AUC:   0.9881
+
+MULTI-CLASS CLASSIFICATION (Attack Type Detection)
+---------------------------------------------------
+Model: Random Forest
+
+Cross-Validation Results (3 folds):
+  Mean Accuracy: 0.0886 ± 0.0014
+
+Final Test Set Performance:
+  Accuracy: 0.0797
+  Classes: 10
+
+ALL ATTACK TYPES DETECTED
+--------------------------
+0: Benign
+1: Bot
+2: DDOS attack-HOIC
+3: DDOS attack-LOIC-UDP
+4: DoS attacks-Hulk
+5: DoS attacks-SlowHTTPTest
+6: FTP-BruteForce
+7: Infilteration
+8: Label
+9: SSH-Bruteforce
+
+EXPORTED ARTIFACTS
+------------------
+Directory Structure:
+  dwig_ML9125/
+  ├── models/
+  │   ├── binary_model_Logistic_Regression.pkl
+  │   ├── binary_model_Random_Forest.pkl
+  │   ├── multiclass_model.pkl
+  │   ├── scaler.pkl
+  │   ├── label_encoder.pkl
+  │   ├── label_mapping.json
+  │   └── feature_names.pkl
+  ├── reports/
+  │   ├── predictions.csv
+  │   ├── evaluation_results.json
+  │   ├── dataset_info.json
+  │   └── EXECUTION_SUMMARY.txt
+  └── visualizations/
+      ├── 01_confusion_matrix_binary.png
+      ├── 02_confusion_matrix_multiclass.png
+      ├── 03_roc_curve.png
+      ├── 04_probability_distribution.png
+      ├── 05_attack_types.png
+      ├── 06_dataset_composition.png
+      └── 07_kfold_performance.png
+
+OUTPUT DIRECTORY: /content/dwig_ML9125
+
+======================================================================
+✓ SYSTEM READY - Models validated with 3-Fold Cross-Validation
+✓ Robust evaluation on held-out test set
+======================================================================
