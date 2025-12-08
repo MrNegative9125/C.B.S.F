@@ -8,12 +8,21 @@ import socket
 from urllib.parse import urlparse
 import time
 from datetime import datetime
-import plotly.graph_objects as go
-import plotly.express as px
 from io import BytesIO
 import os
 import warnings
 warnings.filterwarnings('ignore')
+
+# Import plotly with error handling
+try:
+    import plotly.graph_objects as go
+    import plotly.express as px
+except ImportError:
+    st.error("Plotly not installed. Installing...")
+    import subprocess
+    subprocess.check_call(['pip', 'install', 'plotly'])
+    import plotly.graph_objects as go
+    import plotly.express as px
 
 # ================================
 # CONFIGURATION FOR GITHUB DEPLOYMENT
