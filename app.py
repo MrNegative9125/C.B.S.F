@@ -20,7 +20,7 @@ warnings.filterwarnings('ignore')
 # ================================
 
 # Default path - will be configurable in the UI
-DEFAULT_BASE_PATH = r"C:\Users\acer\OneDrive\Desktop\dwig_ML9125_complete_full_dataset\dwig_ML9125"
+DEFAULT_BASE_PATH = r"dwig_ML9125/models"
 
 # ================================
 # HELPER FUNCTIONS
