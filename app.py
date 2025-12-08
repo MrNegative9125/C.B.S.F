@@ -20,7 +20,7 @@ warnings.filterwarnings('ignore')
 # ================================
 
 # Default path - will be configurable in the UI
-DEFAULT_BASE_PATH = r"dwig_ML9125/models"
+DEFAULT_BASE_PATH = r"dwig_ML9125"
 
 # ================================
 # HELPER FUNCTIONS
